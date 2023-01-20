@@ -113,15 +113,6 @@ td {
   transition: all 0.5s ease;
 }
 
-@media screen and (max-width: 780px) {
-    .flex-container {
-      flex-direction: column;
-    }
-    .flex-container .btn {
-      margin: 15px 0;
-    }
-}
-
 img {
     height: auto;
     width: 200px;
@@ -160,4 +151,72 @@ img {
     color: wheat;
 }
 
+
+@media (max-width: 650px) {
+    .flex-container {
+      flex-direction: row;
+    }
+    .flex-container .btn {
+      margin: 15px 0;
+    }
+    .BorderTopBottom:before {
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 3px;
+        top: -5px;
+        left: -20px;
+        background: #fff;
+        transition: all 0.5s ease;
+    }
+    
+    .BorderTopBottom:after {
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 3px;
+        bottom: -6px;
+        right: -20px;
+        background: #fff;
+        transition: all 0.5s ease;
+    }
+    
+    .BorderLeftRight:before {
+        content: "";
+        position: absolute;
+        top: -4px;
+        left: -20px;
+        width: 3px;
+        height: 25px;
+        background: #fff;
+        transition: all 0.5s ease;
+    }
+    
+    .BorderLeftRight:after {
+        content: "";
+        position: absolute;
+        bottom: -4px;
+        right: -20px;
+        width: 3px;
+        height: 25px;
+        background: #fff;
+        transition: all 0.5s ease;
+    }
+    
+    .btn:hover .BorderTopBottom:before,
+    .btn:hover .BorderTopBottom:after {
+      width: 120px;
+      transition: all 0.5s ease;
+    }
+    
+    .btn:hover .BorderLeftRight:before,
+    .btn:hover .BorderLeftRight:after {
+      height: 121px;
+      transition: all 0.5s ease;
+    }
+    img {
+        height: auto;
+        width: 80px;
+    }
+}
 
