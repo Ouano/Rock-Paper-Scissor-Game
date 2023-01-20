@@ -1,0 +1,162 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    font-size: 40pt;
+}
+
+h2 {
+    font-size: 20pt;
+}
+
+table {
+    margin-left: 720px;
+    margin-top: auto;
+
+}
+
+th{
+    border: 1px solid white;
+    border-collapse: collapse; 
+    width: 100px;
+}
+
+td {
+    border: 1px solid white;
+}
+
+.Title{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: khaki;
+}
+
+.flex-container {
+    color: burlywood;
+    /* border: 4px solid white; */
+    height: auto;
+    display: flex;
+    position: absolute;
+    top: 40%;
+    left: 34%;
+    transform: translate(-50%, -50%);
+    width: 245px;
+    gap: 81px;
+}
+
+.flex-container .btn {
+    width: auto;
+    margin: 0 20px 0 20px;
+    padding: 15px 0;
+    text-align: center;
+    float: left;
+    cursor: pointer;
+    background: inherit;
+    position: relative;
+}
+
+.BorderTopBottom:before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    top: -5px;
+    left: -20px;
+    background: #fff;
+    transition: all 0.5s ease;
+}
+
+.BorderTopBottom:after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    bottom: -6px;
+    right: -20px;
+    background: #fff;
+    transition: all 0.5s ease;
+}
+
+.BorderLeftRight:before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -20px;
+    width: 3px;
+    height: 25px;
+    background: #fff;
+    transition: all 0.5s ease;
+}
+
+.BorderLeftRight:after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    right: -20px;
+    width: 3px;
+    height: 25px;
+    background: #fff;
+    transition: all 0.5s ease;
+}
+
+.btn:hover .BorderTopBottom:before,
+.btn:hover .BorderTopBottom:after {
+  width: 240px;
+  transition: all 0.5s ease;
+}
+
+.btn:hover .BorderLeftRight:before,
+.btn:hover .BorderLeftRight:after {
+  height: 242px;
+  transition: all 0.5s ease;
+}
+
+@media screen and (max-width: 780px) {
+    .flex-container {
+      width: 180px;
+    }
+    .flex-container .btn {
+      margin: 15px 0;
+    }
+}
+
+img {
+    height: auto;
+    width: 200px;
+}
+
+.score-label{
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+    margin-top: 25%;
+}
+
+.label {
+    color: wheat;
+    font-size: 30px;
+    padding: 0 40px;
+}
+.score-container {
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+    margin-top: 1%;
+}
+
+.score {
+    color: wheat;
+    font-size: 30pt;
+    padding: 0px 40px;
+}
+
+.result-container {
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+    margin-top: 3%;
+    color: wheat;
+}
+
+
