@@ -154,8 +154,8 @@ img {
 
 @media (max-width: 800px) {
     .flex-container {
-        top: calc(30% + 40px);
-        transform: translate(-30%, -25%);
+        top: calc(40%);
+        transform: translate(-50%, -25%);
     }
     .flex-container .btn {
       margin: 15px 0;
