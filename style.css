@@ -152,7 +152,7 @@ img {
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
     .flex-container {
         top: calc(40%);
         transform: translate(-50%, -25%);
