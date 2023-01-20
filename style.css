@@ -114,7 +114,7 @@ td {
 
 @media screen and (max-width: 780px) {
     .flex-container {
-      width: 180px;
+      flex-direction: column;
     }
     .flex-container .btn {
       margin: 15px 0;
