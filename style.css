@@ -43,6 +43,7 @@ td {
     transform: translate(-50%, -50%);
     width: 245px;
     gap: 81px;
+    flex-direction: row;
 }
 
 .flex-container .btn {
